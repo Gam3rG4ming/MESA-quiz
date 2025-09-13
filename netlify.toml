@@ -1,0 +1,7 @@
+[build]
+  functions = "netlify/functions"
+  publish = "dist" # Replace with your static asset folder, e.g., 'public' or 'build'
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/chat"
+  status = 200
